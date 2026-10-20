@@ -73,6 +73,13 @@ Frontend runs on `http://localhost:5173`.
 
 ---
 
-## Documentation & Roadmap
-For the detailed architectural specification, schema design, state machines, and phase-by-phase implementation details, refer to:
-- [SeatSure Implementation Roadmap](docs/SeatSure_Implementation_Roadmap.md)
+## Technical Documentation
+
+Detailed architecture specifications, database schemas, concurrency engines, and API references are located in the [`docs/`](docs/README.md) directory:
+
+- **[System Architecture](docs/architecture.md)** — Modular monolith design, domain boundaries, and sequence diagrams.
+- **[Concurrency & Locking Engine](docs/concurrency_and_locking.md)** — Sorted pessimistic row-level locking (`SELECT ... FOR UPDATE`), deadlock prevention, and idempotency.
+- **[Database Schema & State Machines](docs/database_schema.md)** — PostgreSQL 16 schema, ER diagram, Flyway migrations, and lifecycle state machines.
+- **[REST API Reference](docs/api_reference.md)** — Full specification covering events, seat inventory, holds, checkout, and passes.
+- **[Setup & Deployment Guide](docs/setup_and_deployment.md)** — Docker setup, environment variables, Testcontainers execution, and production builds.
+- **[Implementation Roadmap](docs/implementation_roadmap.md)** — Comprehensive engineering roadmap and milestone plan.
